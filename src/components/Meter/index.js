@@ -6,7 +6,9 @@ import styles from './index.css';
 export default class Meter extends React.Component {
   render () {
     return (
-      <div>I want to grow up to be a meter</div>
+      <svg width='300' height='180' className={classNames(styles.this)}>
+
+      </svg>
     );
   }
 }

@@ -1,0 +1,5 @@
+$bg-color: #2A2A2A;
+
+svg.this {
+  background-color: $bg-color;
+}
