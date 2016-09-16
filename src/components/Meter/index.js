@@ -26,15 +26,15 @@ export default class Meter extends React.Component {
   render () {
     return (
       <svg width='300' height='180' className={classNames(styles.this)}>
-        <text x='0' y='20' className={classNames(styles.title)}>{this.props.value}</text>
+        <text x='150' y='10' className={classNames(styles.title)}>{this.props.value}</text>
         <path transform='translate(60,55)' className={classNames(styles.arc)}
           d="M0,90 A90,90,0 1 1 180,90"
           />
-        <text x='0' y= '40'>
-        {this.props.min}-{this.props.max}
+        <text x='60' y= '155'>
+        {this.props.min}
         </text>
-        <text x='0' y= '60'>
-        {this.state.percent}
+        <text x='240' y= '155'>
+        {this.props.max}
         </text>
       </svg>
     );
