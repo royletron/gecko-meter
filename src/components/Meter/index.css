@@ -14,8 +14,17 @@ svg.this {
     }
   }
   > path.arc {
-    stroke:#DFDFDF;
+    stroke:$fg-color;
     stroke-width:14;
     fill-opacity:0;
+  }
+  > g.needle {
+    stroke:$fg-color;
+    stroke-width:4;
+    stroke-linecap: round;
+    > .bg {
+      stroke:$bg-color;
+      stroke-width:14;
+    }
   }
 }
