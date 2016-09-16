@@ -5,6 +5,19 @@ svg.this {
   background-color: $bg-color;
   > text {
     fill: #DFDFDF;
+    font-size: 20px;
     font-family: sans-serif;
+    text-anchor: middle;
+    alignment-baseline: hanging;
   }
+}
+
+text.title {
+  font-size: 30px;
+}
+
+path.arc {
+  stroke:#DFDFDF;
+  stroke-width:14;
+  fill-opacity:0;
 }
