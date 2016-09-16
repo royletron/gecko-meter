@@ -9,15 +9,13 @@ svg.this {
     font-family: sans-serif;
     text-anchor: middle;
     alignment-baseline: hanging;
+    &.title {
+      font-size: 30px;
+    }
   }
-}
-
-text.title {
-  font-size: 30px;
-}
-
-path.arc {
-  stroke:#DFDFDF;
-  stroke-width:14;
-  fill-opacity:0;
+  > path.arc {
+    stroke:#DFDFDF;
+    stroke-width:14;
+    fill-opacity:0;
+  }
 }
