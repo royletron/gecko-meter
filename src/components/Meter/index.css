@@ -1,5 +1,10 @@
 $bg-color: #2A2A2A;
+$fg-color: #DFDFDF;
 
 svg.this {
   background-color: $bg-color;
+  > text {
+    fill: #DFDFDF;
+    font-family: sans-serif;
+  }
 }
