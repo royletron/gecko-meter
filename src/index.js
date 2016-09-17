@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 
 import './index.css';
-import App from './App';
+import GeckoMeter from './apps/GeckoMeter';
 import store from './store';
 
-render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
+render(<Provider store={store}><GeckoMeter /></Provider>, document.getElementById('root'));
