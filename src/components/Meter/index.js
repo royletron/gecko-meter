@@ -19,16 +19,16 @@ export default class Meter extends React.Component {
     }
   }
   calculate () {
-    var min = this.props.min < this.props.max ? this.props.min : this.props.max
-    var max = this.props.max > this.props.min ? this.props.max : this.props.min
-    var percent = (this.props.value - min) / (max - min)
-    if(percent > 1) { percent = 1 }
-    if(percent < 0) { percent = 0 }
+    var min = this.props.min < this.props.max ? this.props.min : this.props.max;
+    var max = this.props.max > this.props.min ? this.props.max : this.props.min;
+    var percent = (this.props.value - min) / (max - min);
+    if(percent > 1) { percent = 1; }
+    if(percent < 0) { percent = 0; }
     this.setState({
       percent,
       min,
       max
-    })
+    });
   }
   render () {
     var pre = this.props.pre || '';

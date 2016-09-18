@@ -32,7 +32,7 @@ export function getNewWidgister () {
         dispatch(successNewWidgister(result.data));
       })
       .catch(function (error) {
-        dispatch(failureNewWidgister(error));
+        dispatch(failureNewWidgister(error.message));
       })
   }
 }
