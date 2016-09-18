@@ -1,3 +1,9 @@
+div.this {
+  padding: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
 div.loading {
   width: 300px;
   height: 180px;
@@ -5,6 +11,7 @@ div.loading {
   color: #DFDFDF;
   font-size: 1.3em;
   text-align: center;
+  margin: 0 auto;
 }
 
 a.button {

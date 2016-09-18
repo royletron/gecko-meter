@@ -31,13 +31,15 @@ class AppComponent extends React.Component {
   render () {
     if (this.props.status === 'fetching') {
       return (
-        <div className={classNames(styles.loading)}>Loading ...</div>
+        <div className={classNames(styles.this)}>
+          <div className={classNames(styles.loading)}>Loading ...</div>
+        </div>
       )
     } else if (this.props.status === 'idle' && this.props.widgister) {
       var widgister = this.props.widgister;
       console.log()
       return (
-        <div>
+        <div className={classNames(styles.this)}>
           <Meter pre={widgister.format && widgister.format === 'currency' ? getSymbolFromCurrency(widgister.unit) : undefined} min={widgister.min} max={widgister.max} value={widgister.value} />
           <p>
             <a className={classNames(styles.button)} onClick={this.onNewRequest.bind(this)}>Re-fetch</a>
