@@ -93,3 +93,295 @@ exports[`test should display with prefix 1`] = `
   </g>
 </svg>
 `;
+
+exports[`test should flip min and max values if they are the wrong way around 1`] = `
+<svg
+  className=""
+  height="180"
+  width="300">
+  <text
+    className=""
+    x="150"
+    y="10">
+    
+    1
+  </text>
+  <path
+    className=""
+    d="M0,90 A90,90,0 1 1 180,90"
+    transform="translate(60,55)" />
+  <text
+    x="60"
+    y="155">
+    
+    10
+  </text>
+  <text
+    x="240"
+    y="155">
+    
+    100
+  </text>
+  <g
+    className=""
+    transform="translate(150, 148)">
+    <line
+      className={undefined}
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-110" />
+    <line
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-95" />
+  </g>
+</svg>
+`;
+
+exports[`test should flip min and max values if they are the wrong way around 2`] = `
+<svg
+  className=""
+  height="180"
+  max={10}
+  min={100}
+  width="300">
+  <text
+    className=""
+    x="150"
+    y="10">
+    
+    1
+  </text>
+  <path
+    className=""
+    d="M0,90 A90,90,0 1 1 180,90"
+    transform="translate(60,55)" />
+  <text
+    x="60"
+    y="155">
+    
+    10
+  </text>
+  <text
+    x="240"
+    y="155">
+    
+    100
+  </text>
+  <g
+    className=""
+    transform="translate(150, 148)">
+    <line
+      className={undefined}
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-110" />
+    <line
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-95" />
+  </g>
+</svg>
+`;
+
+exports[`test should report max if value is greater than max 1`] = `
+<svg
+  className=""
+  height="180"
+  width="300">
+  <text
+    className=""
+    x="150"
+    y="10">
+    
+    100
+  </text>
+  <path
+    className=""
+    d="M0,90 A90,90,0 1 1 180,90"
+    transform="translate(60,55)" />
+  <text
+    x="60"
+    y="155">
+    
+    10
+  </text>
+  <text
+    x="240"
+    y="155">
+    
+    100
+  </text>
+  <g
+    className=""
+    transform="translate(150, 148)">
+    <line
+      className={undefined}
+      transform="rotate(90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-110" />
+    <line
+      transform="rotate(90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-95" />
+  </g>
+</svg>
+`;
+
+exports[`test should report max if value is greater than max 2`] = `
+<svg
+  className=""
+  height="180"
+  value={300}
+  width="300">
+  <text
+    className=""
+    x="150"
+    y="10">
+    
+    100
+  </text>
+  <path
+    className=""
+    d="M0,90 A90,90,0 1 1 180,90"
+    transform="translate(60,55)" />
+  <text
+    x="60"
+    y="155">
+    
+    10
+  </text>
+  <text
+    x="240"
+    y="155">
+    
+    100
+  </text>
+  <g
+    className=""
+    transform="translate(150, 148)">
+    <line
+      className={undefined}
+      transform="rotate(90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-110" />
+    <line
+      transform="rotate(90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-95" />
+  </g>
+</svg>
+`;
+
+exports[`test should report min if value is less than min 1`] = `
+<svg
+  className=""
+  height="180"
+  width="300">
+  <text
+    className=""
+    x="150"
+    y="10">
+    
+    1
+  </text>
+  <path
+    className=""
+    d="M0,90 A90,90,0 1 1 180,90"
+    transform="translate(60,55)" />
+  <text
+    x="60"
+    y="155">
+    
+    10
+  </text>
+  <text
+    x="240"
+    y="155">
+    
+    100
+  </text>
+  <g
+    className=""
+    transform="translate(150, 148)">
+    <line
+      className={undefined}
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-110" />
+    <line
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-95" />
+  </g>
+</svg>
+`;
+
+exports[`test should report min if value is less than min 2`] = `
+<svg
+  className=""
+  height="180"
+  value={1}
+  width="300">
+  <text
+    className=""
+    x="150"
+    y="10">
+    
+    1
+  </text>
+  <path
+    className=""
+    d="M0,90 A90,90,0 1 1 180,90"
+    transform="translate(60,55)" />
+  <text
+    x="60"
+    y="155">
+    
+    10
+  </text>
+  <text
+    x="240"
+    y="155">
+    
+    100
+  </text>
+  <g
+    className=""
+    transform="translate(150, 148)">
+    <line
+      className={undefined}
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-110" />
+    <line
+      transform="rotate(-90 0 0)"
+      x1="0"
+      x2="0"
+      y1="0"
+      y2="-95" />
+  </g>
+</svg>
+`;
