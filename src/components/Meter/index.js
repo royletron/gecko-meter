@@ -19,8 +19,15 @@ export default class Meter extends React.Component {
     }
   }
   calculate () {
+    var min = this.props.min < this.props.max ? this.props.min : this.props.max
+    var max = this.props.max > this.props.min ? this.props.max : this.props.min
+    var percent = (this.props.value - min) / (max - min)
+    if(percent > 1) { percent = 1 }
+    if(percent < 0) { percent = 0 }
     this.setState({
-      percent: (this.props.value - this.props.min) / (this.props.max - this.props.min)
+      percent,
+      min,
+      max
     })
   }
   render () {
@@ -32,10 +39,10 @@ export default class Meter extends React.Component {
           d="M0,90 A90,90,0 1 1 180,90"
           />
         <text x='60' y= '155'>
-        {pre}{this.props.min}
+        {pre}{this.state.min}
         </text>
         <text x='240' y= '155'>
-        {pre}{this.props.max}
+        {pre}{this.state.max}
         </text>
         <g className={classNames(styles.needle)} transform='translate(150, 148)'>
           <line x1="0" y1="0" x2="0" y2="-98" className={styles.bg} x1="0" y1="0" x2="0" y2="-110" transform={`rotate(${(180 * this.state.percent) - 90} 0 0)`} />

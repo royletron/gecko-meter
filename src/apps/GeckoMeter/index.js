@@ -40,7 +40,7 @@ class AppComponent extends React.Component {
         <div>
           <Meter pre={widgister.format && widgister.format === 'currency' ? getSymbolFromCurrency(widgister.unit) : undefined} min={widgister.min} max={widgister.max} value={widgister.value} />
           <p>
-            <a onClick={this.onNewRequest.bind(this)}>Re-fetch</a>
+            <a className={classNames(styles.button)} onClick={this.onNewRequest.bind(this)}>Re-fetch</a>
           </p>
         </div>
       );
